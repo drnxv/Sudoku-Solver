@@ -72,14 +72,12 @@ def empty_pos(board):
 
   return None
 
-
 def main():
   print_board(board)
   print('=' * 50)
   solve(board)
   print_board(board)
   print('Solved')
-
 
 if __name__ == '__main__':
   main()
