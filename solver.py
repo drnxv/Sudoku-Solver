@@ -25,6 +25,7 @@ def solve(board):
       if solve(board):
         return True
 
+      # back tracking
       board[row][col] = 0
 
 def valid_number(board, num, pos):
@@ -77,6 +78,8 @@ def main():
   print('=' * 50)
   solve(board)
   print_board(board)
+  print('Solved')
+
 
 if __name__ == '__main__':
   main()
