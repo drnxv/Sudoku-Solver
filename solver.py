@@ -12,7 +12,6 @@ board = [
 ]
 
 def solve(board):
-
   # finds the empty spot
   empty = empty_pos(board)
   # board is full
@@ -35,7 +34,6 @@ def solve(board):
       board[row][col] = 0
 
 def valid_number(board, num, pos):
-  
   # check the row if the number can work
   for i in range(len(board[0])):
     if board[pos[0]][i] == num and pos[1] != i:
@@ -80,6 +78,7 @@ def empty_pos(board):
       if board[i][j] == 0:
         return (i, j)
 
+  # if there is no empty position return none
   return None
 
 # main function calling all functions
