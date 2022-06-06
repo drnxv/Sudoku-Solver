@@ -83,10 +83,12 @@ def main():
     [0, 0, 6, 5, 0, 3, 0, 0, 0],
     [0, 0, 8, 0, 6, 1, 0, 7, 0]
   ]
-  
+
+  # before
   print_board(board)
   print('=' * 50)
   solve(board)
+  # after
   print_board(board)
   print('Solved')
 
